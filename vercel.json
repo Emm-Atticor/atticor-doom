@@ -1,1 +1,1 @@
-# Atticor Doom & Deliverables
+{"rewrites":[{"source":"/(.*)", "destination":"/index.html"}]}
