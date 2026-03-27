@@ -504,7 +504,7 @@ const App=()=>{
   const[auditLog,setAuditLog]=useState([]);
   const[pops,setPops]=useState(POSTINGS);
   const[plPanels,setPlPanels]=useState(PL_PANELS);
-  const[trafficHistory,setTrafficHistory]=useState(TRAFFIC_HISTORY_INIT);
+  let[trafficHistory,setTrafficHistory]=useState(TRAFFIC_HISTORY_INIT);
   const[workMonth,setWorkMonth]=useState(()=>{const cm=CALENDAR.find(c=>new Date(c.bcEnd+"T00:00:00")>=new Date());return cm?cm.month:"March"});
   const[alertsDismissed,setAlertsDismissed]=useState([]);
   const[oohContracts,setOohContracts]=useState(OOH_CONTRACTS_INIT);
